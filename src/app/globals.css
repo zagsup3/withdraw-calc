@@ -55,3 +55,9 @@ body {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
 }
+.hide-settings {
+    transform: translateX(100%);
+}
+.show-settings {
+    transform: translateX(0%);
+}

@@ -41,9 +41,9 @@ const Settings = ({
     }, [vat]);
     return (
         <div
-            className={`sidebar-wrapper fixed inset-0 p-3 translate-x-[${
-                !!open ? "0%" : "100%"
-            }] transition-all flex justify-end`}
+            className={`sidebar-wrapper fixed inset-0 p-3 ${
+                open ? "show-settings" : "hide-settings"
+            } transition-all flex justify-end`}
             onClick={() => {
                 onClose();
             }}
