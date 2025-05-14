@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.withdraw-calc-wrapper {
+    max-width: min(95%, 400px);
+    margin: 10px auto;
+    /* background: gray; */
+}
+.withdraw-calc-wrapper > form {
+    display: flex;
+    flex-direction: column;
+}
+.withdraw-calc-wrapper > form > input {
+    background: rgb(66, 66, 66);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.sidebar {
+    max-width: min(100%, 450px);
+}
+.sidebar > div > input {
+    background: rgb(66, 66, 66);
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+.sidebar-wrapper {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
