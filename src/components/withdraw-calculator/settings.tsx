@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import AddIcon from "@/../public/add.png";
 import DeleteIcon from "@/../public/delete.png";
+import CloseIcon from "@/../public/close.png";
 import Image from "next/image";
 export type VATSettingsType = {
     limit: number;
@@ -62,7 +63,7 @@ const Settings = ({
                         }}
                         className="cursor-pointer"
                     >
-                        close
+                        <Image src={CloseIcon} alt="close" width={20} height={20} />
                     </button>
                 </div>
                 <h1 className="font-semibold py-2 mb-1">VAT</h1>
